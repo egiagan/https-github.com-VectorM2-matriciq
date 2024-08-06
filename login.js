@@ -90,28 +90,32 @@ alert(errorMessage)
  }
 )
 
-//reset password .
- const reset = document.getElementById("resetPassword")
- reset.addEventListener("click",function(event){
-    event.preventDefault();
-  let email = document.getElementById("email").value;
-  console.log(email)
-if(email == "null"){
-  alert("Please Enter Your email!!")
-} else{
+const reset = document.getElementById("resetPassword");
+reset.addEventListener("click", function(event) {
+  event.preventDefault();
+  
+  const email = document.getElementById("email").value.trim();
+  
+  console.log(email);
+  
+  // Email validation regex
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  sendPasswordResetEmail(auth, email)
-  .then(() => {
-    // Password reset email sent!
-    alert("Password reset email sent!")
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-    console.log(errorMessage)
-  });
-}
+  if (email === "") {
+    alert("Please enter your email!!");
+  } else if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address!!");
+  } else {
+    sendPasswordResetEmail(auth, email)
+      .then(() => {
+        // Password reset email sent!
+        alert("Password reset email sent!");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.error(errorMessage);
+      });
+  }
+});
 
-
-
- })

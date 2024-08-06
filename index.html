@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MatricIQ</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <nav class="navbar sticky-top bg-light">
+      <div class="container">
+        <div class="social-icons d-flex">
+          <i class="fa-brands fa-youtube mx-1"></i>
+          <i class="fa-brands fa-facebook mx-1"></i>
+          <i class="fa-brands fa-linkedin mx-1"></i>
+          <i class="fa-brands fa-instagram mx-1"></i>
+          <i class="fa-brands fa-whatsapp mx-1"></i>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><img src="brand-assets/MATRIC IQ LOGO.png" style="width: 200px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Career Guidance
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Carrer Councelling</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Virtual Tours</a></li>
+                <li><a class="dropdown-item" href="#">Motivation</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link disabled">Bursaries</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Student Tools
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">APS Calculator</a></li>
+                <li><a class="dropdown-item" href="#">Exam Tools</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Uni Application Tracker</a>
+                </li>
+                
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="about-us.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about-us.html">Contact Us</a></li>
+                <li><a class="dropdown-item" href="about-us.html">Support/Donate</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <button class="btn btn-primary mx-1" onclick="location.href='create-account.html'">
+              Create Account
+            </button>
+           
+            <button
+              class="btn btn-outline-success"
+              onclick="location.href='login.html'"
+            >
+              Login
+            </button>
+          
+        </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Slider -->
+    <section
+      class="main container d-md-flex  align-items-center mt-2 mt-sm-2 mb-sm-2  "
+    >
+      <div class="copy-text col-md-5 mb-3 mb-md-0">
+        <h2 class="page-title">Find Your <span class="text-success">Future</span> Path!</h2>
+        <p class="text">
+          MatricIQ is your ultimate companion for acing matric exams and
+          preparing for university. Access comprehensive courses, calculate your
+          APS, and receive personalized career guidance to ensure you're ready
+          for the next step in your academic journey.
+        </p>
+        <button class="btn btn-success">Get Started</button>
+      </div>
+
+      <div class="image-container col-md-7">
+        <img src="Group 1 copy.png" alt="student" class="img-fluid w-50" />
+      </div>
+      
+    </section>
+
+    
+
+    <!-- Features Section -->
+    <section class="container mt-5">
+      <h2 class="text-start mb-4 mt-5">MatricIQ at a Glance</h2>
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="icon mb-2">
+                <i class="fas fa-user-graduate fa-3x"></i>
+              </div>
+              <h4 class="card-title">Career Guidance</h4>
+              <p class="card-text">
+                Get personalized career advice based on your interests,
+                strengths, and academic performance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="icon mb-2">
+                <i class="fas fa-calculator fa-3x"></i>
+              </div>
+              <h4 class="card-title">APS Calculator</h4>
+              <p class="card-text">
+                Calculate your APS score easily and find out what courses you
+                qualify for at various universities.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="icon mb-2">
+                <i class="fas fa-book-open fa-3x"></i>
+              </div>
+              <h4 class="card-title">Comprehensive Courses</h4>
+              <p class="card-text">
+                Access detailed courses on essential subjects to prepare for
+                your matric exams and university.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="icon mb-2"><i class="fas fa-tasks fa-3x"></i></div>
+              <h4 class="card-title">University Application Tracker</h4>
+              <p class="card-text">
+                Keep track of all your university applications and stay informed
+                about key dates and deadlines.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="icon mb-2"><i class="fas fa-file-alt fa-3x"></i></div>
+              <h4 class="card-title">Study Resources</h4>
+              <p class="card-text">
+                Access a variety of study materials, past papers, and tutorials
+                to help you excel in your exams.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <div class="icon mb-2"><i class="fas fa-bullhorn fa-3x"></i></div>
+              <h4 class="card-title">Motivational Content</h4>
+              <p class="card-text">
+                Stay motivated with stories, interviews, and content from
+                successful students and professionals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Breaker Section -->
+    <section id="breaker" class="my-5">
+      <div class="container text-center">
+        <hr
+          class="my-4"
+          style="border-top: 2px solid #ddd; width: 50%; margin: 0 auto"
+        />
+        <p class="text-muted mb-0">— 
+          "Success is not the key to happiness. Happiness is the key to success." – Albert Schweitzer —</p>
+        <hr
+          class="my-4"
+          style="border-top: 2px solid #ddd; width: 50%; margin: 0 auto"
+        />
+      </div>
+    </section>
+
+  <!-- Bursaries Section -->
+<section id="bursaries" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Available Bursaries</h2>
+    <p class="text-center mb-4">
+      Explore a range of bursaries to support your educational journey. Find
+      financial aid that suits your needs and start applying today!
+    </p>
+    <div class="row">
+      <!-- Bursary 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="bursary1.jpg" class="card-img-top" alt="Bursary 1" />
+          <div class="card-body">
+            <h5 class="card-title">South African Reserve Bank: Bursaries 2025</h5>
+            <p class="card-text">
+              The SA Reserve provides scholarships and bursaries to students from disadvantaged backgrounds in relevant fields of study.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-calendar-day"></i> Deadline: 31 Dec 2024</li>
+            <li class="list-group-item"><i class="fas fa-university"></i> Category: Banking & Finance</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Apply Now</a>
+            <a href="https://www.graduates24.com/jobs/viewjob/10365" class="card-link">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bursary 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="bursary2.jpg" class="card-img-top" alt="Bursary 2" />
+          <div class="card-body">
+            <h5 class="card-title">ISFAP: Bursaries 2025</h5>
+            <p class="card-text">
+              ISFAP offers bursaries for students from the “missing middle” in high-demand occupations. Apply for studies in selected qualifications at partner institutions.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-calendar-day"></i> Deadline: 15 Nov 2024</li>
+            <li class="list-group-item"><i class="fas fa-briefcase"></i> Category: Various</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Apply Now</a>
+            <a href="https://www.graduates24.com/jobs/viewjob/10365" class="card-link">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bursary 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="bursary3.jpg" class="card-img-top" alt="Bursary 3" />
+          <div class="card-body">
+            <h5 class="card-title">Denel Dynamics: Engineering Bursaries 2025</h5>
+            <p class="card-text">
+              Offers bursaries to top-performing students with a passion for engineering in a high-tech environment.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-calendar-day"></i> Deadline: 30 Sep 2024</li>
+            <li class="list-group-item"><i class="fas fa-cogs"></i> Category: Engineering</li>
+          </ul>
+          <div class="card-body">
+            <a href="https://www.zabursaries.co.za/mba-postgraduate/rheinmetall-denel-munition-rdm-bursary/" class="card-link">Apply Now</a>
+            <a href="#" class="card-link">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bursary 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="bursary4.jpg" class="card-img-top" alt="Bursary 4" />
+          <div class="card-body">
+            <h5 class="card-title">Sasol: Mining / Engineering 2025</h5>
+            <p class="card-text">
+              Sasol invites applications for Mining and Engineering Bursaries, aimed at students from Gauteng, Mpumalanga, and the Free State.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-calendar-day"></i> Deadline: 01 Feb 2025</li>
+            <li class="list-group-item"><i class="fas fa-diamond"></i> Category: Mining & Engineering</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Apply Now</a>
+            <a href="https://www.graduates24.com/jobs/viewjob/10246" class="card-link">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bursary 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="bursary5.jpg" class="card-img-top" alt="Bursary 5" />
+          <div class="card-body">
+            <h5 class="card-title">Amazon: Bursaries 2025</h5>
+            <p class="card-text">
+              Amazon offers bursaries to final-year undergraduate students or third-year students in a four-year degree program.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-calendar-day"></i> Deadline: 30 Oct 2024</li>
+            <li class="list-group-item"><i class="fas fa-cube"></i> Category: Technology</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Apply Now</a>
+            <a href="https://www.graduates24.com/jobs/viewjob/10288" class="card-link">More Info</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bursary 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="bursary6.jpg" class="card-img-top" alt="Bursary 6" />
+          <div class="card-body">
+            <h5 class="card-title">Transnet: Bursaries 2025</h5>
+            <p class="card-text">
+              Transnet offers bursaries for specialist commercial disciplines to support their business strategy and address skills needs.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-calendar-day"></i> Deadline: 15 Dec 2024</li>
+            <li class="list-group-item"><i class="fas fa-train"></i> Category: Commercial</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link">Apply Now</a>
+            <a href="https://www.graduates24.com/jobs/viewjob/10462" class="card-link">More Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Breaker Section -->
+    <section id="breaker" class="my-5">
+      <div class="container text-center">
+        <hr
+          class="my-4"
+          style="border-top: 2px solid #ddd; width: 50%; margin: 0 auto"
+        />
+        <p class="text-muted mb-0">— End of Section —</p>
+        <hr
+          class="my-4"
+          style="border-top: 2px solid #ddd; width: 50%; margin: 0 auto"
+        />
+      </div>
+    </section>
+
+    <section class="container mt-5 ">
+      <div class="card-section d-md-flex container">
+        <div class="img-container col-md-5">
+          <img  src="https://images.pexels.com/photos/7516535/pexels-photo-7516535.jpeg?auto=compress&cs=tinysrgb&w=600" alt="MatricIQ App Image" />
+        </div>
+
+        <div class="text-container col-md-6 lead">
+          <h2 class="mb-3">
+            The <i>Best</i> Mobile App For Students.
+          </h2>
+          <p >
+            Prepare for your matric exams with our extensive collection of study
+            materials, past papers, and practice tests. <br>
+            
+            The MatricIQ mobile app offers you the best tools and resources to ensure you're fully
+            equipped for success. Our app features interactive quizzes, video
+            tutorials, and step-by-step guides to help you master each subject
+            with ease. Download the MatricIQ app today and start your journey
+            towards academic excellence!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Study Tools Section -->
+    <section id="study-tools" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Our Study Tools</h2>
+        <div class="row">
+          <!-- Study Tool 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card border-primary">
+              <img
+                src="path/to/tool1-image.jpg"
+                class="card-img-top"
+                alt="Tool 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tool 1: Study Planner</h5>
+                <p class="card-text">
+                  Organize your study schedule and manage your time effectively
+                  with our interactive study planner. Set goals, track progress,
+                  and stay on top of your assignments and exams.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Study Tool 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card border-primary">
+              <img
+                src="path/to/tool2-image.jpg"
+                class="card-img-top"
+                alt="Tool 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tool 2: Flashcard Maker</h5>
+                <p class="card-text">
+                  Create and customize flashcards to aid in memorization and
+                  review key concepts. Utilize spaced repetition to enhance
+                  learning and retention.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Study Tool 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card border-primary">
+              <img
+                src="path/to/tool3-image.jpg"
+                class="card-img-top"
+                alt="Tool 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tool 3: Practice Tests</h5>
+                <p class="card-text">
+                  Access a variety of practice tests and quizzes to assess your
+                  knowledge and prepare for exams. Track your performance and
+                  focus on areas that need improvement.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Study Tool 4 -->
+          <div class="col-md-4 mb-4">
+            <div class="card border-primary">
+              <img
+                src="path/to/tool4-image.jpg"
+                class="card-img-top"
+                alt="Tool 4"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tool 4: Study Groups</h5>
+                <p class="card-text">
+                  Join or create study groups to collaborate with peers, share
+                  resources, and discuss challenging topics. Enhance your
+                  learning experience through peer interaction and support.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Study Tool 5 -->
+          <div class="col-md-4 mb-4">
+            <div class="card border-primary">
+              <img
+                src="path/to/tool5-image.jpg"
+                class="card-img-top"
+                alt="Tool 5"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tool 5: Note Organizer</h5>
+                <p class="card-text">
+                  Keep your notes organized and accessible with our note
+                  organizer tool. Tag, search, and categorize your notes to
+                  quickly find and review important information.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Study Tool 6 -->
+          <div class="col-md-4 mb-4">
+            <div class="card border-primary">
+              <img
+                src="path/to/tool6-image.jpg"
+                class="card-img-top"
+                alt="Tool 6"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tool 6: Resource Library</h5>
+                <p class="card-text">
+                  Explore a comprehensive library of study resources, including
+                  articles, videos, and guides on various subjects. Find
+                  valuable materials to support your learning journey.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CSS for Study Tools Section -->
+    <style>
+      .card {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+      }
+      .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+      .card-text {
+        font-size: 1rem;
+        color: #555;
+      }
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+      .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #00408a;
+      }
+    </style>
+
+    <!-- Career Guidance Section -->
+    <section id="career-guidance" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Career Guidance and Counseling</h2>
+        <p class="text-center mb-4">
+          Explore various career paths and get personalized advice to help you
+          make informed decisions about your future. Our career guidance
+          services offer information on different career opportunities, required
+          qualifications, and potential job paths. Connect with experts and get
+          the support you need to plan your career journey effectively.
+        </p>
+        <div class="row align-items-center">
+          <!-- Career Guidance Text -->
+          <div class="col-md-6 mb-4">
+            <h4>Personalized Career Counseling</h4>
+            <p>
+              Our career counseling services are designed to help you navigate
+              your career choices with confidence. Whether you need guidance on
+              selecting a career path, preparing for job interviews, or
+              exploring further education options, our experienced counselors
+              are here to assist you every step of the way.
+            </p>
+            <h4>Career Resources</h4>
+            <p>
+              Access a wealth of resources, including career guides, industry
+              insights, and expert articles to enhance your understanding of
+              various fields and make well-informed decisions. We provide
+              resources for various industries, including technology,
+              healthcare, arts, and more.
+            </p>
+          </div>
+          <!-- Chatbot Box -->
+          <div class="col-md-6 mb-4">
+            <div class="chatbot-box">
+              <h4 class="text-center mb-3">Chat with Our Career Advisor</h4>
+              <div class="chatbox" id="chatbox">
+                <!-- Chatbot Interface (Placeholder) -->
+                <div class="messages">
+                  <div class="message bot-message">
+                    <p>
+                      Hello! How can I assist you with your career planning
+                      today?
+                    </p>
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="chat-input"
+                  placeholder="Type your message here..."
+                />
+                <button class="btn btn-primary mt-2" id="send-message">
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CSS for Chatbot -->
+    <style>
+      .chatbot-box {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 15px;
+        background: #fff;
+      }
+      .chatbox {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        overflow-y: auto;
+      }
+      .messages {
+        flex: 1;
+        margin-bottom: 10px;
+      }
+      .message {
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        max-width: 80%;
+      }
+      .bot-message {
+        background: #f1f1f1;
+        align-self: flex-start;
+      }
+      .user-message {
+        background: #007bff;
+        color: #fff;
+        align-self: flex-end;
+      }
+      #chat-input {
+        border-radius: 0;
+      }
+    </style>
+
+    <!-- JavaScript for Chatbot (Placeholder) -->
+    <script>
+      document
+        .getElementById("send-message")
+        .addEventListener("click", function () {
+          var input = document.getElementById("chat-input").value;
+          if (input) {
+            var messages = document.querySelector(".messages");
+            var userMessage = document.createElement("div");
+            userMessage.className = "message user-message";
+            userMessage.innerHTML = "<p>" + input + "</p>";
+            messages.appendChild(userMessage);
+            document.getElementById("chat-input").value = "";
+            messages.scrollTop = messages.scrollHeight;
+
+            // Simulate a bot response
+            setTimeout(function () {
+              var botMessage = document.createElement("div");
+              botMessage.className = "message bot-message";
+              botMessage.innerHTML =
+                "<p>Thank you for your message. How can I further assist you?</p>";
+              messages.appendChild(botMessage);
+              messages.scrollTop = messages.scrollHeight;
+            }, 1000);
+          }
+        });
+    </script>
+
+    <!-- Courses Section -->
+    <section id="courses" class="container mt-5">
+      <h2 class="text-center mb-4">Our Courses</h2>
+      <div class="row">
+        <!-- Course 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="path_to_image1.jpg"
+              class="card-img-top"
+              alt="Course 1 Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Introduction to Microsoft Word</h5>
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="fas fa-user me-1"></i> Jane Doe</span>
+                <span
+                  ><i class="fas fa-calendar-alt me-1"></i> August 15,
+                  2024</span
+                >
+                <span><i class="fas fa-tags me-1"></i> Word Processing</span>
+              </div>
+              <p class="card-text">
+                Learn the basics of Microsoft Word, including formatting
+                documents, using styles, and creating professional reports.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="path_to_image2.jpg"
+              class="card-img-top"
+              alt="Course 2 Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mastering Excel Formulas</h5>
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="fas fa-user me-1"></i> John Smith</span>
+                <span
+                  ><i class="fas fa-calendar-alt me-1"></i> July 22, 2024</span
+                >
+                <span><i class="fas fa-tags me-1"></i> Data Analysis</span>
+              </div>
+              <p class="card-text">
+                Discover advanced Excel formulas and functions to enhance your
+                data analysis and reporting skills.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="path_to_image3.jpg"
+              class="card-img-top"
+              alt="Course 3 Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">PowerPoint Presentation Skills</h5>
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="fas fa-user me-1"></i> Sarah Brown</span>
+                <span
+                  ><i class="fas fa-calendar-alt me-1"></i> June 30, 2024</span
+                >
+                <span><i class="fas fa-tags me-1"></i> Presentation</span>
+              </div>
+              <p class="card-text">
+                Enhance your presentation skills with tips on creating engaging
+                PowerPoint slides and delivering impactful presentations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="path_to_image4.jpg"
+              class="card-img-top"
+              alt="Course 4 Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Advanced Google Sheets Techniques</h5>
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="fas fa-user me-1"></i> Emily Davis</span>
+                <span
+                  ><i class="fas fa-calendar-alt me-1"></i> May 10, 2024</span
+                >
+                <span><i class="fas fa-tags me-1"></i> Spreadsheets</span>
+              </div>
+              <p class="card-text">
+                Explore advanced techniques in Google Sheets to automate tasks,
+                analyze data, and collaborate efficiently.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="path_to_image5.jpg"
+              class="card-img-top"
+              alt="Course 5 Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Basic Coding with Python</h5>
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="fas fa-user me-1"></i> Michael Lee</span>
+                <span
+                  ><i class="fas fa-calendar-alt me-1"></i> April 5, 2024</span
+                >
+                <span><i class="fas fa-tags me-1"></i> Programming</span>
+              </div>
+              <p class="card-text">
+                Get started with Python programming, covering fundamental
+                concepts and basic coding skills for beginners.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Course 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img
+              src="path_to_image6.jpg"
+              class="card-img-top"
+              alt="Course 6 Image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Introduction to Web Development</h5>
+              <div class="d-flex justify-content-between mb-3">
+                <span><i class="fas fa-user me-1"></i> Jessica Wilson</span>
+                <span
+                  ><i class="fas fa-calendar-alt me-1"></i> March 15, 2024</span
+                >
+                <span><i class="fas fa-tags me-1"></i> Web Design</span>
+              </div>
+              <p class="card-text">
+                Learn the basics of web development, including HTML, CSS, and
+                JavaScript, to build your own websites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FontAwesome Icons -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-S3yx3g8T2W0o6IVTqEPR/rw1ldjc2DkPS8MExJK1kTKYjscQlHj6GM4qFRwzUjIMwS8CmAzvDd7cL/7w6FYxw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+    <footer class="bg-light text-dark py-5">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-4">About Us</h5>
+                  <p>
+                      MatricIQ is dedicated to helping high school students succeed in
+                      their matric exams and prepare for university. We offer
+                      comprehensive courses, career guidance, and useful tools to
+                      support students throughout their academic journey.
+                  </p>
+              </div>
+              <div class="col-md-4 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-4">Contact Us</h5>
+                  <ul class="list-unstyled">
+                      <li>
+                          <i class="fas fa-map-marker-alt me-2"></i>123 Education Lane,
+                          Study City, SA
+                      </li>
+                      <li><i class="fas fa-phone me-2"></i>(+27) 123-456-7890</li>
+                      <li>
+                          <i class="fas fa-envelope me-2"></i><a href="mailto:info@matriciq.com"
+                              class="text-dark">info@matriciq.com</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-md-4 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-4">Quick Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-dark">Home</a></li>
+                      <li><a href="#" class="text-dark">Courses</a></li>
+                      <li><a href="#" class="text-dark">Career Guidance</a></li>
+                      <li><a href="#" class="text-dark">Bursaries</a></li>
+                      <li><a href="#" class="text-dark">Contact Us</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row mt-4 d-flex justify-content-between align-items-center">
+              <div class="col-md-6 d-flex justify-content-start">
+                  <a href="https://youtube.com" class="text-dark me-3" target="_blank" title="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
+                  <a href="https://facebook.com" class="text-dark me-3" target="_blank" title="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                  <a href="https://linkedin.com" class="text-dark me-3" target="_blank" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                  <a href="https://instagram.com" class="text-dark me-3" target="_blank" title="Instagram"><i class="fab fa-instagram fa-2x"></i></a>
+                  <a href="https://wa.me/1234567890" class="text-dark" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp fa-2x"></i></a>
+              </div>
+              <div class="col-md-6 d-flex justify-content-end">
+                  <a href="#" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="40"></a>
+                  <a href="#" target="_blank" class="ms-3"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Get it on the App Store" height="40"></a>
+              </div>
+          </div>
+          <div class="row mt-4">
+              <div class="col text-center">
+                  <p class="mb-0">
+                      © 2024 MatricIQ. All rights reserved.
+                      <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  </body>
+</html>

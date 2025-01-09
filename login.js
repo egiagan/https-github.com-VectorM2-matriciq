@@ -6,17 +6,13 @@ import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider ,signInWithPopu
 
 const firebaseConfig = {
 
-    apiKey: "AIzaSyC3hXKMkfJ11FJgM2z0yp83vfXBcA9pOqM",
-
-    authDomain: "matriciq-520b5.firebaseapp.com",
-  
-    projectId: "matriciq-520b5",
-  
-    storageBucket: "matriciq-520b5.appspot.com",
-  
-    messagingSenderId: "74691569329",
-  
-    appId: "1:74691569329:web:0f9eb6989399d0f7472490"
+  apiKey: "AIzaSyDAlth1sxiP-S3r3fVDXhwadVVnEvpdO6s",
+  authDomain: "login-egi-agan.firebaseapp.com",
+  databaseURL: "https://login-egi-agan-default-rtdb.firebaseio.com",
+  projectId: "login-egi-agan",
+  storageBucket: "login-egi-agan.firebasestorage.app",
+  messagingSenderId: "395059466114",
+  appId: "1:395059466114:web:5c6b0621e9739df6b5c99b"
 
 };
 
